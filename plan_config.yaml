@@ -1,0 +1,24 @@
+# Settings used by plan.py (weekly Instagram plan for Metricool)
+captions:
+  language: fa
+planner:
+  timezone: Asia/Tehran
+  windows: [["09:30", "12:30"], ["17:00", "21:30"]]   # one post per window
+  posts_per_day: [1, 2]                                # random 1 or 2 posts per day
+  story_delay_minutes: [25, 90]                        # story goes out this long after its post
+  min_fill: 0.75                                       # only products whose poster has >= 75% of its data cells
+  categories: [seal, bearing, shock, suspension]       # oil seals, bearings, shock absorbers, cab suspension
+
+# products/<folder> -> category used in config.yaml (the repo's folders are named like the Excel sheets)
+folders:
+  "HUMMER BALLBEARING.xlsx": bearing
+  "NOK&KAAN&AFRE OIL SEALS.xlsx": seal
+  "HUMMER SHOCK ABSORBER.xlsx": shock
+  "WEGA SUSPENTION.xlsx": suspension
+  "HUMMER ABS RING.xlsx": abs
+  "HUMMER ADJUSTER BRAKE.xlsx": adj
+  "WEGA BOLT": bolt
+  "AFRE&ZOB SAHAND BRAKE DISC.xlsx": disc
+  "KAAN CALIPER.xlsx": kaan
+  "KAAN ABS SENSOR.xlsx": sensor
+  "CALIPER CARRIER.xlsx": carrier
